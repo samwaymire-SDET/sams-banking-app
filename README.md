@@ -30,14 +30,14 @@ Example:
 curl -X POST localhost:8080/api/accounts -H "Content-Type: application/json" -d "{\"owner\":\"Sam\",\"balance\":1000}"
 
 ## Roadmap
- Project scaffold + hello endpoint
- Accounts API (in-memory)
- Register/login with BCrypt
- Deposit / withdraw / transfer
- H2 persistence
- JUnit + Mockito unit tests
- RestAssured API suite
- Minimal UI + Playwright suite
- GitHub Actions CI
+ - Project scaffold + hello endpoint
+ - Accounts API (in-memory)
+ - Register/login with BCrypt
+ - Deposit / withdraw / transfer
+ - H2 persistence
+ - JUnit + Mockito unit tests
+ - RestAssured API suite
+ - Minimal UI + Playwright suite
+ - GitHub Actions CI
 
 
