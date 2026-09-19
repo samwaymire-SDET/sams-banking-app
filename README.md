@@ -19,3 +19,27 @@ The frontend talks to the backend only through HTTP. All business logic lives in
 ```text
 cd backend-service
 mvnw.cmd spring-boot:run
+
+API
+Method	Endpoint	Description
+GET	/hello	Health check
+POST	/api/accounts	Create an account
+GET	/api/accounts	List all accounts
+Example:
+
+text
+
+
+curl -X POST localhost:8080/api/accounts -H "Content-Type: application/json" -d "{\"owner\":\"Sam\",\"balance\":1000}"
+Roadmap
+ Project scaffold + hello endpoint
+ Accounts API (in-memory)
+ Register/login with BCrypt
+ Deposit / withdraw / transfer
+ H2 persistence
+ JUnit + Mockito unit tests
+ RestAssured API suite
+ Minimal UI + Playwright suite
+ GitHub Actions CI
+
+
